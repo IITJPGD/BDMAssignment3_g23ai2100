@@ -7,9 +7,9 @@ resource "aws_db_instance" "example" {
   engine               = "mysql"             # Database engine (e.g., mysql, postgres)
   engine_version       = "8.0.30"            # Engine version
   instance_class       = "db.t3.micro"       # Instance type
-  name                 = "exampledb"         # Database name
+  name                 = "iitbdm"         # Database name
   username             = "admin"             # Master username
-  password             = "securepassword123" # Master password
+  password             = "iit@2023" # Master password
   parameter_group_name = "default.mysql8.0"  # Parameter group
   skip_final_snapshot  = true                # Avoid final snapshot when deleting
 
