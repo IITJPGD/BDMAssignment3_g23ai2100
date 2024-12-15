@@ -13,7 +13,7 @@ resource "aws_db_instance" "example" {
   parameter_group_name = "default.mysql8.0"  # Parameter group
   skip_final_snapshot  = true                # Avoid final snapshot when deleting
 
-  publicly_accessible    = false # Restrict public access
+  publicly_accessible    = true 
   vpc_security_group_ids = [aws_security_group.db_sg.id]
   db_subnet_group_name   = aws_db_subnet_group.default.name
 }
